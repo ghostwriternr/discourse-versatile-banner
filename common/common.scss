@@ -13,7 +13,7 @@
   background-position: center center;
   background-repeat: no-repeat;
   background-color: $background_color;
-  min-height: $minimum_height;
+
   display: flex;
   justify-content: flex-start;
 
@@ -199,6 +199,7 @@
       }
 
       .container {
+        min-height: $minimum_height;
         display: flex;
         max-width: 95%;
       }
