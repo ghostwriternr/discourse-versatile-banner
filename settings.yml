@@ -66,7 +66,7 @@ cookie_name:
     en: 'When important changes are made to the banner, you must change the cookie name to ensure all your users see the changes.'
 full_width_banner:
   type: bool
-  default: false
+  default: true
   description: 
     en: 'Display the banner at full browser width'
 banner_background_image:
@@ -88,7 +88,7 @@ primary_text_color:
     en: 'The main text color of the banner'
 secondary_text_color:
   type: string
-  default: "#FF6C00"
+  default: "#FFF"
   description:
     en: 'The text color of the icon and text headings, and the button background color.'
 link_text_color:
@@ -109,66 +109,18 @@ main_heading_content:
             <h2 class="x-title">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </h2>
-            <div class="colored-line"></div>
-            <div class="description">
-              <p>
-                Nulla ullamcorper augue vel sodales pellentesque. Sed 
-                vitae sapien sit amet mauris consequat malesuada. 
-                Vestibulum vitae iaculis nisl, vel aliquet velit. 
-                Fusce venenatis laoreet diam, non dictum nisl 
-                vestibulum non.
-              </p>
-            </div>
-            <div class="colored-line"></div>
 first_column_content:
   type: string
   textarea: true
-  default: |
-            <h3>A simple box</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-              Sed id congue eros, sit amet suscipit libero. Nunc vitae 
-              placerat est.
-            </p>
-            <div class="banner-list">
-              <ul>
-                <li><a href="https://twitter.com/discourse" target="_blank">A tweet</a> to wake up my friends</li>
-                <li>Put the photos in the bag</li>
-                <li>Rearrange books in the study</li>
-                <li>And the notes?</li>
-              </ul>
-            </div>
+  default: ''
 second_column_content:
   type: string
   textarea: true
-  default: |
-            <h3>Another simple box</h3>
-            <p>
-              Integer velit ante, 
-              <a href="https://discourse.org">DISCOURSE</a> 
-              amet tristique in, gravida at ligula. Sed gravida mauris id 
-              neque vestibulum semper. Suspendisse potenti. Nam 
-              nec maximus ligula. Ut eget semper est. Sed ornare 
-              sit amet justo eu rutrum. Integer sit amet facilisis ipsum.
-            </p>
-
-            <div class="buttons" id="my-button">
-              <a href="#" class="btn btn-icon-text">My new button</a>
-            </div>
+  default: ''
 third_column_content:
   type: string
   textarea: true
-  default: |
-            <h3>Yet another simple box</h3>
-            <p>
-              Pellentesque ut lacinia nunc, eu molestie nulla. 
-              Pellentesque viverra nisi urna, at hendrerit nisl 
-              sodales in. Morbi auctor sodales nisi, eget aliquam 
-              justo maximus in. Suspendisse a felis a massa 
-              elementum pellentesque quis eget dolor. Orci varius 
-              natoque penatibus et magnis dis parturient montes, 
-              nascetur ridiculus mus.
-            </p>
+  default: ''
 fourth_column_content:
   type: string
   textarea: true
@@ -199,13 +151,16 @@ fourth_column_size:
         to view the list of available icons.'
 first_column_icon:
   type: string
-  default: 'cog'
+  default: ''
 second_column_icon:
   type: string
-  default: 'https://d11a6trkgmumsb.cloudfront.net/original/3X/b/3/b33be9538df3547fcf9d1a51a4637d77392ac6f9.png'
+  default: ''
 third_column_icon:
   type: string
-  default: 'wrench'
+  default: ''
 fourth_column_icon:
   type: string
   default: ''
+minimum_height:
+  type: string
+  default: 300px
