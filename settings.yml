@@ -78,7 +78,7 @@ banner_background_image:
          deleted whenever it is updated.'
 background_color:
   type: string
-  default: "#EED4A1"
+  default: "#20014b"
   description: 
     en: 'Used in place of a background image'
 primary_text_color:
